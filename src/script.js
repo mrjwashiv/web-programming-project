@@ -1,3 +1,11 @@
-const element = <img src="https://avatars.dicebear.com/api/male/john.svg"/>;
+//<img src="https://avatars.dicebear.com/api/male/john.svg"/>;
 
-ReactDOM.render(element, document.getElementById('avatar'));
+function getAvatar(){
+    var formElem = document.getElementById("avForm");
+    
+    const apiUrl = "https://avatars.dicebear.com/api/" + formElem.elements[1].value + "/" + formElem.elements[0].value + ".svg";
+
+    var avatarImg = <img src={apiUrl}/>
+
+    ReactDOM.render(element, document.getElementById('avatar'));
+}

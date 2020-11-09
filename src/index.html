@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <!-- <script src="script.js"></script> -->
     <body>
-        <div id="avatar">
-            <img src="https://avatars.dicebear.com/api/male/john.svg"/>
+        <div id="user-input">
+            <form id="avForm" action="/src/user.html" method="get">
+                <label for="avName">Avatar Name</label></br>
+                <input type="text" id="avName" name="avName"><br>
+
+                <label for="type">Avatar Type:</label><br>
+                <input type="text" id="type" name="type"><br>
+
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </body>
 </html>
